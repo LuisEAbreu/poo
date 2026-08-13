@@ -25,4 +25,12 @@ public class Carro {
             velocidadeAtual = 100;
         }
     }
+
+    public void desacelerarCarro(int valor) {
+        if (valor < velocidadeAtual) {
+            velocidadeAtual -= valor;
+        } else {
+            velocidadeAtual = 0;
+        }
+    }
 }
