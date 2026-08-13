@@ -17,4 +17,12 @@ public class Carro {
     public int obterVelocidadeAtual() {
         return velocidadeAtual;
     }
+
+    public void acelerarCarro(int valor) {
+        if ((valor + velocidadeAtual) < 100) {
+            velocidadeAtual += valor;
+        } else {
+            velocidadeAtual = 100;
+        }
+    }
 }
