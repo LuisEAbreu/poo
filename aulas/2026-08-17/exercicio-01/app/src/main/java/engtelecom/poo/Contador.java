@@ -10,4 +10,8 @@ public class Contador {
     public void incrementar(){
         valorAtual++;
     }
+
+    public int obterValor(){
+        return valorAtual;
+    }
 }
