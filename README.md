@@ -15,4 +15,4 @@ Repositório com as atividades práticas da disciplina de Programação Orientad
 - [Aula 02 - 30/07/2026](aulas/2026-07-30) - Introdução ao uso de estruturas de decisão, estruturas de repetição e vetores.
 - [Aula 03 - 03/08/2026](aulas/2026-08-03) - Introdução ao uso das classes Math e String, argumentos de linha de comando e redirecionamento de entrada. 
 - [Aula 04 - 06/08/2026](aulas/2026-08-06) - Introdução ao uso de IDE's e criação de projetos Java com gradle. 
-- [Aula 05 - 13/08/2026](aulas/2026-08-13) - Introdução ao paradigma da orientação a objetos
+- [Aula 05 - 13/08/2026](aulas/2026-08-13) - Codificando em Java
