@@ -26,10 +26,8 @@ public class Carro {
     }
 
     public void desacelerar(int valor) {
-        if (valor < velocidadeAtual) {
-            velocidadeAtual -= valor;
-        } else {
-            velocidadeAtual = 0;
+        if (valor > 0) {
+            velocidadeAtual = Math.max((velocidadeAtual - valor), 0);
         }
     }
 }
