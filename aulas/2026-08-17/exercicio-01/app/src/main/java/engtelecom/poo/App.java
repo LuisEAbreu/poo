@@ -4,11 +4,16 @@
 package engtelecom.poo;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+    static void main() {
+        Contador cont = new Contador();
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        cont.atribuirValor(5);
+        IO.println(cont.obterValor());
+        cont.incrementar();
+        IO.println(cont.obterValor());
+        cont.atribuirValor(-5);
+        IO.println(cont.obterValor());
+        cont.atribuirValor(0);
+        IO.println(cont.obterValor());
     }
 }
