@@ -18,7 +18,7 @@ public class Carro {
         return velocidadeAtual;
     }
 
-    public void acelerarCarro(int valor) {
+    public void acelerar(int valor) {
         if ((valor + velocidadeAtual) < 100) {
             velocidadeAtual += valor;
         } else {
@@ -26,7 +26,7 @@ public class Carro {
         }
     }
 
-    public void desacelerarCarro(int valor) {
+    public void desacelerar(int valor) {
         if (valor < velocidadeAtual) {
             velocidadeAtual -= valor;
         } else {

@@ -11,13 +11,13 @@ public class App {
         IO.println(ferrari.obterCor());
 
         IO.println(fusca.obterVelocidadeAtual());
-        fusca.acelerarCarro(37);
+        fusca.acelerar(37);
         IO.println(fusca.obterVelocidadeAtual());
-        fusca.acelerarCarro(70);
+        fusca.acelerar(70);
         IO.println(fusca.obterVelocidadeAtual());
-        fusca.desacelerarCarro(40);
+        fusca.desacelerar(40);
         IO.println(fusca.obterVelocidadeAtual());
-        fusca.desacelerarCarro(65);
+        fusca.desacelerar(65);
         IO.println(fusca.obterVelocidadeAtual());
     }
 }
