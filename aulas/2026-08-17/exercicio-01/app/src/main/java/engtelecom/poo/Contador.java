@@ -6,4 +6,8 @@ public class Contador {
     public void atribuirValor(int valor){
         valorAtual = (valor >= 0) ? valor : valorAtual;
     }
+
+    public void incrementar(){
+        valorAtual++;
+    }
 }
