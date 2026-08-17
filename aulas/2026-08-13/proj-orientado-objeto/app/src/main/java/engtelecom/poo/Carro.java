@@ -19,10 +19,9 @@ public class Carro {
     }
 
     public void acelerar(int valor) {
-        if ((valor + velocidadeAtual) < 100) {
-            velocidadeAtual += valor;
-        } else {
-            velocidadeAtual = 100;
+        if (valor > 0) {
+            velocidadeAtual = Math.min((valor + velocidadeAtual), 100);
+//            velocidadeAtual = ((valor + velocidadeAtual) < 100) ? velocidadeAtual + valor : 100; equivalente
         }
     }
 
