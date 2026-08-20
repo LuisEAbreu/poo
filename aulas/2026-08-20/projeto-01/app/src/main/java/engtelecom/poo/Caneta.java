@@ -5,9 +5,14 @@ public class Caneta {
     private double nivelTinta;
     private final double CONSUMO;
 
-    public Caneta(String cor, double nivelTinta) {
+    public Caneta(String cor, double nivelTinta, double CONSUMO) {
         this.cor = cor;
         this.nivelTinta = nivelTinta;
+        this.CONSUMO = CONSUMO;
+    }
+
+    public Caneta(String cor, double nivelTinta){
+        this(cor, nivelTinta, 0.01);
     }
 
     public Caneta(String cor) {
