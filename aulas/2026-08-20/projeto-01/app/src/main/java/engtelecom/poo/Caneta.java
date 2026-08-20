@@ -40,13 +40,14 @@ public class Caneta {
     }
 
     public double desenhar(int xi, int xf, int yi, int yf){
-        if (nivelTinta > 0) {
-            double distancia = Math.sqrt((xf - xi) ^ 2 + (xf - xi) ^ 2);
+            double distancia = Math.sqrt((xf - xi) ^ 2 + (yf - yi) ^ 2);
 
-            double consumo = distancia * 0.01;
-            nivelTinta = nivelTinta - consumo;
+            double consumido = distancia * CONSUMO;
 
-            return consumo;
+        if (nivelTinta >= consumido) {
+            nivelTinta = nivelTinta - consumido;
+
+            return consumido;
         }
         return -1;
     }
