@@ -32,4 +32,16 @@ public class Caneta {
     public void setNivelTinta(double nivelTinta) {
         this.nivelTinta = Math.min(Math.max(0, nivelTinta),100);
     }
+
+    public double desenhar(int xi, int xf, int yi, int yf){
+        if (nivelTinta > 0) {
+            double distancia = Math.sqrt((xf - xi) ^ 2 + (xf - xi) ^ 2);
+
+            double consumo = distancia * 0.01;
+            nivelTinta = nivelTinta - consumo;
+
+            return consumo;
+        }
+        return -1;
+    }
 }
