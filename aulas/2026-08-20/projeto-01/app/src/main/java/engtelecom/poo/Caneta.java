@@ -3,6 +3,7 @@ package engtelecom.poo;
 public class Caneta {
     private String cor;
     private double nivelTinta;
+    private final double CONSUMO;
 
     public Caneta(String cor, double nivelTinta) {
         this.cor = cor;
