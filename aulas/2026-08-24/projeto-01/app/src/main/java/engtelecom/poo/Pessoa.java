@@ -13,6 +13,10 @@ public class Pessoa {
         this.id = ++contador;
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();
