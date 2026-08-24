@@ -7,6 +7,11 @@ public class Carro {
     private final int VELOCIDADE_MAX = 100;
     private static final int VELOCIDADE_MIN = 0;
 
+    public Carro(String cor) {
+        this.cor = cor;
+        this.velocidadeAtual = 0;
+    }
+
     // métodos:
     public static int getVelocidadeMin() {
         return VELOCIDADE_MIN;
