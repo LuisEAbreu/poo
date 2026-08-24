@@ -4,6 +4,8 @@ public class Carro {
     // atributos:
     private String cor;
     private int velocidadeAtual;
+    private final int VELOCIDADE_MAX = 100;
+    private static final int VELOCIDADE_MIN = 0;
 
     // métodos:
     public void definirCor(String novaCor) {
