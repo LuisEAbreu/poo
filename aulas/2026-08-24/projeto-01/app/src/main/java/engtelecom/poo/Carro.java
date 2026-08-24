@@ -26,14 +26,14 @@ public class Carro {
 
     public void acelerar(int valor) {
         if (valor > 0) {
-            velocidadeAtual = Math.min((valor + velocidadeAtual), 100);
+            velocidadeAtual = Math.min((valor + velocidadeAtual), VELOCIDADE_MAX);
 //            velocidadeAtual = ((valor + velocidadeAtual) < 100) ? velocidadeAtual + valor : 100; equivalente
         }
     }
 
     public void desacelerar(int valor) {
         if (valor > 0) {
-            velocidadeAtual = Math.max((velocidadeAtual - valor), 0);
+            velocidadeAtual = Math.max((velocidadeAtual - valor), VELOCIDADE_MIN);
         }
     }
 }
