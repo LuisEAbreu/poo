@@ -6,4 +6,10 @@ public class Pessoa {
     private String email;
 
     private static int contador = 0;
+
+    public Pessoa(String nome, String email) {
+        this.nome = nome;
+        this.email = email;
+        this.id = ++contador;
+    }
 }
