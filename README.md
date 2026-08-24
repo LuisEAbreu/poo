@@ -18,3 +18,4 @@ Repositório com as atividades práticas da disciplina de Programação Orientad
 - [Aula 05 - 13/08/2026](aulas/2026-08-13) - Introdução ao paradigma da orientação a objetos
 - [Aula 06 - 17/08/2026](aulas/2026-08-17) - Codificando em Java
 - [Aula 07 - 20/08/2026](aulas/2026-08-20) - Introdução ao uso de constructor, getter, setter e constantes
+- [Aula 08 - 24/08/2026](aulas/2026-08-24) - Introdução ao uso de final, static e toString.
