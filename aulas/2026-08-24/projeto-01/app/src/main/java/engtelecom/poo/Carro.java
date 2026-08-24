@@ -8,6 +8,10 @@ public class Carro {
     private static final int VELOCIDADE_MIN = 0;
 
     // métodos:
+    public static int getVelocidadeMin() {
+        return VELOCIDADE_MIN;
+    }
+
     public void definirCor(String novaCor) {
         cor = novaCor;
     }
