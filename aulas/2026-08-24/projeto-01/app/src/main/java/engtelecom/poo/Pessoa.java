@@ -12,4 +12,15 @@ public class Pessoa {
         this.email = email;
         this.id = ++contador;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder();
+
+        sb.append("Id: ").append(id);
+        sb.append("\nNome: ").append(nome);
+        sb.append("\nEmail: ").append(email);
+
+        return sb.toString();
+    }
 }
