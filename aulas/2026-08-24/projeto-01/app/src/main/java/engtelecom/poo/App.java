@@ -17,5 +17,13 @@ public class App {
         IO.println(fusca.obterVelocidadeAtual());
         fusca.desacelerar(65);
         IO.println(fusca.obterVelocidadeAtual());
+
+        Pessoa fulano = new Pessoa("José", "jose@gmail.com");
+        Pessoa sicrano = new Pessoa("João", "joao@gmail.com");
+        Pessoa beltrano = new Pessoa("Roberval", "roberval@gmail.com");
+
+        IO.println(fulano.toString());
+        IO.println(sicrano); // equivalente a IO.println(sicrano.toString());
+        IO.println(beltrano);
     }
 }
