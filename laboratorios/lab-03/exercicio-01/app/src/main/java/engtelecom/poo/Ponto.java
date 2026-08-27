@@ -35,4 +35,8 @@ public class Ponto {
 
         return sb.toString();
     }
+
+    public double distancia(Ponto d){
+        return Math.sqrt(Math.pow((d.x - this.x), 2) + Math.pow((d.y - this.y), 2));
+    }
 }
