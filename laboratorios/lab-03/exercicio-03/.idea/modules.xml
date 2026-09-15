@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/exercicio-03.iml" filepath="$PROJECT_DIR$/.idea/exercicio-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exercicio-03.iml" filepath="$PROJECT_DIR$/.idea/modules/exercicio-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/exercicio-03.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/exercicio-03.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/exercicio-03.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/exercicio-03.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/exercicio-03.app.test.iml" filepath="$PROJECT_DIR$/.idea/modules/app/exercicio-03.app.test.iml" />
     </modules>
   </component>
 </project>
