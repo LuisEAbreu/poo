@@ -2,7 +2,7 @@ package engtelecom.poo;
 
 import java.util.ArrayList;
 
-public class App {
+public class Doc {
     public static void main(String[] args) {
 
         ArrayList<String> lista = new ArrayList<>();
@@ -32,5 +32,7 @@ public class App {
 
         // method reference
         lista.forEach(IO::println);
+
+        lista.removeIf(e->e.equals("IFSC"));
     }
 }
