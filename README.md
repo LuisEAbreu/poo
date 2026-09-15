@@ -8,6 +8,7 @@ Repositório com as atividades práticas da disciplina de Programação Orientad
 
 - [Laboratório 01](laboratorios/lab-01) - Sistema de Controle de Versão
 - [Laboratório 02](laboratorios/lab-02) - Prática com a linguagem Java
+- [Laboratório 03](laboratorios/lab-03) - Prática com construtor, modificadores, sobrecarga, membros estáticos e finais
 
 ## Aulas
 
@@ -19,3 +20,4 @@ Repositório com as atividades práticas da disciplina de Programação Orientad
 - [Aula 06 - 17/08/2026](aulas/2026-08-17) - Codificando em Java
 - [Aula 07 - 20/08/2026](aulas/2026-08-20) - Introdução ao uso de constructor, getter, setter e constantes
 - [Aula 08 - 24/08/2026](aulas/2026-08-24) - Introdução ao uso de final, static e toString.
+- [Aula 09 - 14/09/2026](aulas/2026-09-14) - Introdução ao uso Coleções Java: listas, conjuntos e mapas; for each, lambdas e method reference.
