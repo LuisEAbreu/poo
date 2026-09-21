@@ -6,6 +6,13 @@ public class Livro {
     private String autor;
     private int anoPublicacao;
 
+    private boolean verificaNullOuEmpty(String s){
+        if(s == null){
+            return true;
+        }
+        return s.isEmpty();
+    }
+
     public Livro(String isbn, String titulo, String autor, int anoPublicacao) {
         this.isbn = isbn;
         this.titulo = titulo;
@@ -29,12 +36,20 @@ public class Livro {
         return anoPublicacao;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public boolean setTitulo(String titulo) {
+        if(!verificaNullOuEmpty(titulo)){
+            this.titulo = titulo;
+            return true;
+        }
+        return false;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public boolean setAutor(String autor) {
+        if(!verificaNullOuEmpty(titulo)){
+            this.autor = autor;
+            return true;
+        }
+        return false;
     }
 
     public void setAnoPublicacao(int anoPublicacao) {
