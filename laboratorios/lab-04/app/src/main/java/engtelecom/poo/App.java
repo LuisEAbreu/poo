@@ -85,6 +85,32 @@ public class App {
         return false;
     }
 
+    public boolean removerLivro(){
+        String isbn = IO.readln("Entre com o ISBN do livro: ");
+
+        if(verificaIsbn(isbn)){
+            return livros.remove(isbn) != null;
+        }
+        return false;
+    }
+
+    public int menu(){
+        IO.println("""
+                === MENU ===
+                
+                1. Cadastrar um livro;
+                2. Listar somente ISBN e título de todos os livros cadastrados.
+                3. Consultar um livro pelo ISBN.
+                4. Consultar livros por autor.
+                5. Consultar livros por ano de publicação.
+                6. Atualizar os dados de um livro.
+                7. Remover um livro.
+                8. Sair do sistema.
+                """);
+
+        return Integer.parseInt(IO.readln("Entre com a opção: "));
+    }
+
     public static void main(String[] args) {
         App a = new App();
 
