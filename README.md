@@ -9,6 +9,7 @@ Repositório com as atividades práticas da disciplina de Programação Orientad
 - [Laboratório 01](laboratorios/lab-01) - Sistema de Controle de Versão
 - [Laboratório 02](laboratorios/lab-02) - Prática com a linguagem Java
 - [Laboratório 03](laboratorios/lab-03) - Prática com construtor, modificadores, sobrecarga, membros estáticos e finais
+- [Laboratório 04](laboratorios/lab-04) - Prática coleções Java.
 
 ## Aulas
 
