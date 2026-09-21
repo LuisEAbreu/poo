@@ -1,5 +1,9 @@
 package engtelecom.poo;
 
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.common.BitMatrix;
+import com.google.zxing.oned.EAN13Writer;
+
 public class Livro {
     private String isbn;
     private String titulo;
@@ -64,6 +68,7 @@ public class Livro {
         sb.append("\nTítulo: ").append(titulo);
         sb.append("\nAutor: ").append(autor);
         sb.append("\nAno de publicação: ").append(anoPublicacao);
+        sb.append("\n").append(codigoDeBarra());
 
         return sb.toString();
     }
@@ -75,6 +80,31 @@ public class Livro {
         sb.append(" Título: ").append(titulo);
 
         return sb.toString();
+    }
+
+    public String codigoDeBarra(){
+        int largura = 105;
+        int altura = 5;
+        StringBuilder saida = new StringBuilder();
+
+        try{
+            EAN13Writer writer = new EAN13Writer();
+
+            BitMatrix matrix = writer.encode(isbn, BarcodeFormat.EAN_13, largura, 1);
+
+            for (int i = 0; i < altura; i++) {
+                for (int j = 0; j < matrix.getWidth(); j++) {
+                    if(matrix.get(j, 0)){   // se bit == 1
+                        saida.append("\u2588");
+                    } else {
+                        saida.append(" ");
+                    }
+                }
+                saida.append("\n");
+            }
+        } catch (Exception e){}
+
+        return saida.toString();
     }
 
 }
