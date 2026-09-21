@@ -5,10 +5,14 @@ import java.util.HashMap;
 public class App {
     private HashMap<String, Livro> livros = new HashMap<>();
 
+    private boolean verificaIsbn(String isbn){
+        return livros.containsKey(isbn);
+    }
+
     public boolean cadastrarLivro(){
         String isbn = IO.readln("Entre com o ISBN do livro: ");
 
-        if (livros.containsKey(isbn)){
+        if (verificaIsbn(isbn)){
             return false;
         }
 
@@ -30,7 +34,7 @@ public class App {
     public boolean consultarLivroPorIsbn(){
         String isbn = IO.readln("Entre com o ISBN do livro: ");
 
-        if (livros.containsKey(isbn)){
+        if (verificaIsbn(isbn)){
             IO.println(livros.get(isbn));
             return true;
         }
