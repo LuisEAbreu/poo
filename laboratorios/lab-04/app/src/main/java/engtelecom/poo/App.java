@@ -63,6 +63,26 @@ public class App {
 
     public boolean atualizarDadosLivro(){
         String isbn = IO.readln("Entre com o ISBN do livro: ");
+
+        if(verificaIsbn(isbn)){
+            Livro l = livros.get(isbn);
+
+            IO.println("Título: " + l.getTitulo());
+            String novo = IO.readln("Entre com o novo título (padrão: manter o anterior): ");
+            l.setTitulo(novo);
+
+            IO.println("Autor: " + l.getAutor());
+            novo = IO.readln("Entre com o novo autor (padrão: manter o anterior): ");
+            l.setAutor(novo);
+
+            IO.println("Ano da publicacao: " + l.getAnoPublicacao());
+            novo = IO.readln("Entre com o novo ano de publicação (padrão: manter o anterior): ");
+            if(!novo.isEmpty()) {
+                l.setAnoPublicacao(Integer.parseInt(novo));
+            }
+            return true;
+        }
+        return false;
     }
 
     public static void main(String[] args) {
