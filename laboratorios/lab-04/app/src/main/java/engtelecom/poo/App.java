@@ -114,13 +114,20 @@ public class App {
     public static void main(String[] args) {
         App a = new App();
 
-        IO.println(a.cadastrarLivro());
-        IO.println(a.cadastrarLivro());
-        IO.println(a.cadastrarLivro());
+        int opcao;
+        do{
+            opcao = a.menu();
 
-//        a.listarLivros();
-//        a.consultarLivroPorIsbn();
-//        a.consultarLivroPorAutor();
-        a.consultarLivroPorAno();
+            switch (opcao){
+                case 1 -> IO.println(a.cadastrarLivro());
+                case 2 -> a.listarLivros();
+                case 3 -> IO.println(a.consultarLivroPorIsbn());
+                case 4 -> a.consultarLivroPorAutor();
+                case 5 -> a.consultarLivroPorAno();
+                case 6 -> IO.println(a.atualizarDadosLivro());
+                case 7 -> IO.println(a.removerLivro());
+                case 8 -> IO.println("Saindo do sistema...");
+            }
+        } while (opcao != 8);
     }
 }
