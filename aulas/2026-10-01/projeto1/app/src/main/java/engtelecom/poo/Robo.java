@@ -45,4 +45,10 @@ public class Robo {
         }
         return posicaoAtual;
     }
+
+    /* mét carregar bateria:
+        regarrega no máximo e degrada a saude em 1u.
+        não carrega e nem degrada se estiver cheia.
+        retorna a saude da bateria.
+     */
 }
