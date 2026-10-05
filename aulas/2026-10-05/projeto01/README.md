@@ -16,8 +16,8 @@
             -idLivro : int
             -titulo : String
             -idioma : String
-            -autores : ArrayList<Autor>
-            -edicao : ArrayList<Edicao>
+            -autores : ArrayList~Autor~
+            -edicao : ArrayList~Edicao~
         }
         class Editora{
             -idEditora : int
