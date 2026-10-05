@@ -12,3 +12,23 @@
   +55048998761234 → +55 (48) 9 9876-1234
 - Ao listar os contatos, deve-se exibir o nome completo, data de nascimento, telefone(s) e email(s) de cada contato
 - Os telefones e emails devem ser exibidos com o rótulo de identificação
+
+## UML:
+```mermaid
+    classDiagram
+        
+        class App
+        
+        class Agenda
+        
+        class Contato
+        
+        class Telefone
+
+        class Email
+        
+        App "1" *-- "1" Agenda
+        Agenda "1" *-- "0..*" Contato
+        Contato "1" *-- "0..*" Telefone
+        Contato "1" *-- "0..*" Email
+```
