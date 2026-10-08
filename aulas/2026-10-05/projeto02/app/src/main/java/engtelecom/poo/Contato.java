@@ -10,6 +10,18 @@ public class Contato {
     private HashMap<String, Telefone> telefones = new HashMap<>();
     private HashMap<String, Email> emails = new HashMap<>();
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public LocalDate getDataNasc() {
+        return dataNasc;
+    }
+
     public Contato(String nome, String sobrenome, LocalDate dataNasc) {
         this.nome = nome;
         this.sobrenome = sobrenome;
