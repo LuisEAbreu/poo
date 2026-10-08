@@ -55,6 +55,8 @@
 
         class Email{ 
             -valor : String
+            +Email(valor: String)
+            +toString(): String
         }
         
         App "1" *-- "1" Agenda
