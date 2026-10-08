@@ -17,15 +17,36 @@
 ```mermaid
     classDiagram
         
-        class App
+        class App{
+            -agenda : Agenda
+            +main()
+            +menu()
+        }
         
-        class Agenda
+        class Agenda{ 
+            -contatos : ArrayList~Contato~
+            +adicionar() boolean
+            +remover() boolean
+            +atualizar() boolean
+            +listarDadosContato() String
+            +listarContatos() String
+        }
         
-        class Contato
+        class Contato{
+            -nome : String
+            -sobrenome : String
+            -dataNascimento : String
+            -telefones : HashMap~String, Telefone~
+            -emails : HashMap~String, Email~
+        }
         
-        class Telefone
+        class Telefone{
+            -valor : String
+        }
 
-        class Email
+        class Email{ 
+            -valor : String
+        }
         
         App "1" *-- "1" Agenda
         Agenda "1" *-- "0..*" Contato
