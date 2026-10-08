@@ -35,9 +35,18 @@
         class Contato{
             -nome : String
             -sobrenome : String
-            -dataNascimento : String
+            -dataNasc : LocalDate
             -telefones : HashMap~String, Telefone~
             -emails : HashMap~String, Email~
+
+            +Contato(nome: String, sobrenome: String, dN : LocalDate)
+            +addTelefone(rotulo: String, valor: String): boolean
+            +addEmail(rotulo: String, valor: String): boolean
+            +removeTelefone(rotulo : String): boolean
+            +removeEmail(rotulo: String): boolean
+            +updateTelefone(rotulo: String, valor: String): boolean
+            +updateEmail(rotulo: String, valor: String): boolean
+            +toString(): String
         }
         
         class Telefone{
