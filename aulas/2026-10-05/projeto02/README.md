@@ -51,6 +51,8 @@
         
         class Telefone{
             -valor : String
+            +Telefone(valor: String)
+            +toString(): String
         }
 
         class Email{ 
