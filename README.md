@@ -22,3 +22,8 @@ Repositório com as atividades práticas da disciplina de Programação Orientad
 - [Aula 07 - 20/08/2026](aulas/2026-08-20) - Introdução ao uso de constructor, getter, setter e constantes
 - [Aula 08 - 24/08/2026](aulas/2026-08-24) - Introdução ao uso de final, static e toString.
 - [Aula 09 - 14/09/2026](aulas/2026-09-14) - Introdução ao uso Coleções Java: listas, conjuntos e mapas; for each, lambdas e method reference.
+- [Aula 10 - 17/09/2026](aulas/2026-09-17) - Uso Coleções Java: mapas; for each, lambdas e method reference.
+- [Aula 11 - 24/09/2026](aulas/2026-09-24) - Introdução a associação entre classes e diagrama de classes UML.
+- [Aula 12 - 28/09/2026](aulas/2026-09-28) - Uso do UML com Mermaid e conceitos de Associação do tipo Agregação.  
+- [Aula 13 - 01/10/2026](aulas/2026-10-01) - Uso dos conceitos de Associação do tipo Composição e diagrama UML.
+- [Aula 14 - 05/10/2026](aulas/2026-10-05) - Utilização geral de conceitos: Coleções, UML e associação entre classes.
