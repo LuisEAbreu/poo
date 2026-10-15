@@ -27,3 +27,4 @@ Repositório com as atividades práticas da disciplina de Programação Orientad
 - [Aula 12 - 28/09/2026](aulas/2026-09-28) - Uso do UML com Mermaid e conceitos de Associação do tipo Agregação.  
 - [Aula 13 - 01/10/2026](aulas/2026-10-01) - Uso dos conceitos de Associação do tipo Composição e diagrama UML.
 - [Aula 14 - 05/10/2026](aulas/2026-10-05) - Utilização geral de conceitos: Coleções, UML e associação entre classes.
+- [Aula 15 - 15/10/2026](aulas/2026-10-15) - Introdução ao conceito de herança.
