@@ -17,6 +17,9 @@
         -distanciaOperacao : double
         +SemFio(c : int, n :String, p : String, p : double, d : Dimensao, f : double, c : int, dO : double)
     }
+    
+    class Celular
 
     Telefone <|-- SemFio
+    SemFio <|-- Celular 
 ```
