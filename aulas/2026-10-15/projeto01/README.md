@@ -23,3 +23,45 @@
     Telefone <|-- SemFio
     SemFio <|-- Celular 
 ```
+
+# Exercícios:
+
+## Exercício 1:
+
+- Informações: Aluno, professor, coordenador, diretor
+Contexto pensado: Sistema academico
+
+```mermaid
+classDiagram
+    
+    class Pessoa{
+        -nome : String
+        -dataNasci : LocalDate
+        -cpf : String
+    }
+    class Aluno{
+        -matricula : String
+    }
+    class Servidor{
+        -salario : double
+    }
+    
+    class Professor{
+        -turmas : ArrayList~String,String~
+    }
+    
+    class Coordenador{
+        -curso : String
+    }
+    
+    class Diretor{
+        -funcao : String
+    }
+    
+    Pessoa <|-- Aluno
+    Pessoa <|-- Servidor
+    
+    Servidor <|-- Diretor
+    Servidor <|-- Professor
+    Professor <|-- Coordenador
+```
