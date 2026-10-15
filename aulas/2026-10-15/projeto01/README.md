@@ -65,3 +65,21 @@ classDiagram
     Servidor <|-- Professor
     Professor <|-- Coordenador
 ```
+
+## Exercício 2:
+
+- Informações: Livro, revista, jornal, gibi
+Contexto: 
+
+```mermaid
+classDiagram
+    class Livro{}
+    class Revista{}
+    class Jornal{}
+    class Gibi{}
+
+    Livro
+    Revista
+    Jornal
+    Gibi
+```
