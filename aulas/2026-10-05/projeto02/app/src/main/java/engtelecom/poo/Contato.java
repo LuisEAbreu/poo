@@ -1,6 +1,7 @@
 package engtelecom.poo;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 
 public class Contato {
@@ -81,7 +82,8 @@ public class Contato {
         final StringBuilder sb = new StringBuilder();
 
         sb.append("Nome completo: ").append(nome).append(" ").append(sobrenome).append("\n");
-        sb.append("Data de nascimento: ").append(dataNasc).append("\n");
+        sb.append("Data de nascimento: ");
+        sb.append(dataNasc.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))).append("\n");
 
         sb.append("Telefone(s):").append("\n");
         telefones.forEach((rotulo, telefone) -> {
