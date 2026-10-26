@@ -2,11 +2,11 @@ package engtelecom.poo.formas;
 
 import engtelecom.poo.Coordenada;
 
-public class Retangulo extends Forma {
+public class Retangulo extends FormaGeometrica {
     private Coordenada fim;
 
     public Retangulo(String corDaLinha, int xInicio, int yInicio, int xFim, int yFim) {
-        super(corDaLinha, new Coordenada(xInicio, yInicio));
+        super(corDaLinha, xInicio, yInicio);
         this.fim = new Coordenada(xFim, yFim);
     }
 
@@ -29,10 +29,12 @@ public class Retangulo extends Forma {
         return Math.abs(fim.y - inicio.y);
     }
 
+    @Override
     public double calcularArea(){
         return getAltura() * getLargura();
     }
 
+    @Override
     public double calcularPerimetro(){
         return 2 * getAltura() + 2 * getLargura();
     }
