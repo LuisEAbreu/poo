@@ -2,7 +2,7 @@ package engtelecom.poo.formas;
 
 import engtelecom.poo.Coordenada;
 
-public class Linha extends FormaGeometrica {
+public class Linha extends Forma {
     private Coordenada fim;
 
     public Linha(String corDaLinha, int xInicio, int yInicio, int xFim, int yFim) {

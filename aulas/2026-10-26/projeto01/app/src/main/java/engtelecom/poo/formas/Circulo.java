@@ -2,7 +2,7 @@ package engtelecom.poo.formas;
 
 import engtelecom.poo.Coordenada;
 
-public class Circulo extends FormaGeometrica {
+public class Circulo extends Forma {
     private int raio;
 
     public Circulo(String corDaLinha, int xInicio, int yInicio, int raio) {

@@ -2,7 +2,7 @@ package engtelecom.poo.formas;
 
 import engtelecom.poo.Coordenada;
 
-public class Retangulo extends FormaGeometrica{
+public class Retangulo extends Forma {
     private Coordenada fim;
 
     public Retangulo(String corDaLinha, int xInicio, int yInicio, int xFim, int yFim) {

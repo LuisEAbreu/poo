@@ -2,11 +2,11 @@ package engtelecom.poo.formas;
 
 import engtelecom.poo.Coordenada;
 
-public class FormaGeometrica {
+public class Forma {
     protected String corDaLinha;
     protected Coordenada inicio;
 
-    public FormaGeometrica(String corDaLinha, Coordenada inicio) {
+    public Forma(String corDaLinha, Coordenada inicio) {
         this.corDaLinha = corDaLinha;
         this.inicio = inicio;
     }
