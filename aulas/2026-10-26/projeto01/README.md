@@ -5,7 +5,7 @@ classDiagram
         +y : int
     }
     
-    class FormaGeometrica{
+    class Forma{
         #corDaLinha : String
         #inicio : Coordenada
         +desenhar()  String
@@ -15,20 +15,22 @@ classDiagram
         -fim : Coordenada
     }
     
-    class Circulo{
-        -raio : int
+    class FormaGeometrica{
         +calcularArea() double
         +calcularPerimetro() double
     }
     
+    class Circulo{
+        -raio : int
+    }
+    
     class Retangulo{
         -fim : Coordenada
-        +calcularArea() int
-        +calcularPerimetro() double
     }
 
-    FormaGeometrica "1" *-- "1" Coordenada
-    FormaGeometrica <|-- Linha
+    Forma "1" *-- "1" Coordenada
+    Forma <|-- Linha
+    Forma <|-- FormaGeometrica
     FormaGeometrica <|-- Circulo
     FormaGeometrica <|-- Retangulo
 ```
