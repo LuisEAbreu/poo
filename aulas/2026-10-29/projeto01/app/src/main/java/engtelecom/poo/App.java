@@ -14,5 +14,17 @@ public class App {
         formas.add(new Triangulo("amarelo", 0,0,1,2,3,0));
 
         formas.forEach(e-> IO.println(e.desenhar()));
+
+        formas.forEach(e->{
+            if(e instanceof FormaGeometrica f){
+                IO.println(String.format("Área: %.2f m²", f.calcularArea()));
+            }
+        });
+
+        formas.forEach(e->{
+            if(e instanceof FormaGeometrica f){
+                IO.println(String.format("Perímetro: %.2f m", f.calcularPerimetro()));
+            }
+        });
     }
 }
