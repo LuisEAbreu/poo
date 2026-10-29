@@ -6,9 +6,10 @@ classDiagram
     }
     
     class Forma{
+        <<abstract>>
         #corDaLinha : String
         #inicio : Coordenada
-        +desenhar()  String
+        +desenhar()  String *
     }
     
     class Linha{
@@ -16,8 +17,9 @@ classDiagram
     }
     
     class FormaGeometrica{
-        +calcularArea() double
-        +calcularPerimetro() double
+        <<abstract>>
+        +calcularArea() double *
+        +calcularPerimetro() double *
     }
     
     class Circulo{

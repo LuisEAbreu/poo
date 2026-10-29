@@ -25,6 +25,5 @@ public class App {
         IO.println("Área do retângulo: " + r.calcularArea());
         IO.println("Perimetro do retângulo: " + r.calcularPerimetro());
 
-        Forma f = new Forma("verde", new Coordenada(3,4));
     }
 }

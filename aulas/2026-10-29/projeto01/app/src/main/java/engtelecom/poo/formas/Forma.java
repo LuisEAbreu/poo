@@ -2,7 +2,7 @@ package engtelecom.poo.formas;
 
 import engtelecom.poo.Coordenada;
 
-public class Forma {
+public abstract class Forma {
     protected String corDaLinha;
     protected Coordenada inicio;
 
@@ -11,7 +11,5 @@ public class Forma {
         this.inicio = inicio;
     }
 
-    public String desenhar(){
-        return "";
-    }
+    public abstract String desenhar();
 }
