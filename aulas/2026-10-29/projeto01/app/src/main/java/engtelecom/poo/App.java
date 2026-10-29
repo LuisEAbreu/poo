@@ -1,29 +1,18 @@
 package engtelecom.poo;
 
-import engtelecom.poo.formas.Circulo;
-import engtelecom.poo.formas.Forma;
-import engtelecom.poo.formas.Linha;
-import engtelecom.poo.formas.Retangulo;
+import engtelecom.poo.formas.*;
+
+import java.util.ArrayList;
 
 public class App {
     static void main(String[] args) {
-        Linha l = new Linha("azul", 0, 0, 3, 2);
+        ArrayList<Forma> formas = new ArrayList<>();
 
-        IO.println(l.desenhar());
-        IO.println();
+        formas.add(new Linha("azul", 0, 0, 3, 2));
+        formas.add(new Circulo("verde", 1, 1, 5));
+        formas.add(new Retangulo("vermelho", 2,3, 0, 0));
+        formas.add(new Triangulo("amarelo", 0,0,1,2,3,0));
 
-        Circulo c = new Circulo("verde", 1, 1, 5);
-
-        IO.println(c.desenhar());
-        IO.println("Área do círculo: " + c.calcularArea());
-        IO.println("Perimetro do círculo: " + c.calcularPerimetro());
-        IO.println();
-
-        Retangulo r = new Retangulo("vermelho", 2,3, 0, 0);
-
-        IO.println(r.desenhar());
-        IO.println("Área do retângulo: " + r.calcularArea());
-        IO.println("Perimetro do retângulo: " + r.calcularPerimetro());
-
+        formas.forEach(e-> IO.println(e.desenhar()));
     }
 }
