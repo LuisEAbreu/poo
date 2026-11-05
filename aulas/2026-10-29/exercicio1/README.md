@@ -52,8 +52,12 @@ classDiagram
         +guinchar() String
         +virarVampiro() boolean
     }
-    class Pinguim
-    class Ornitorrinco
+    class Pinguim{
+        +reconhecerPar() boolean
+    }
+    class Ornitorrinco{ 
+        +eletrolocalizar() String
+    }
 
     class Oviparo{
         <<interface>>
