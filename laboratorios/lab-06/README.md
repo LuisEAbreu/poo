@@ -6,8 +6,8 @@ classDiagram
         -VELOCIDADE_MAX : int
         -id : int
         #velocidadeAtual : int
-        +acelerar() int
-        +frear() int
+        +acelerar(valor : int) int
+        +frear(valor : int) int
     }
 
     class Anfibio{
@@ -36,7 +36,7 @@ classDiagram
         #TEMP_MIN_MINIGELADEIRA : int
         #TEMP_MAX_MINIGELADEIRA : int
         #tempAtualMiniGel : int
-        +regTempMiniGeladeira() int
+        +regTempMiniGeladeira(valor : int) int
     }
     
     Veiculo <|-- Anfibio
