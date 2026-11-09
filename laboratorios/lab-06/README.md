@@ -3,40 +3,40 @@ classDiagram
     
     class Veiculo {
         <<abstract>>
-        -VELOCIDADE_MAX : int
-        -id : int
-        -velocidadeAtual : int
-        +acelerar(valor : int) int
-        +frear(valor : int) int
+        - VELOCIDADE_MAX : int
+        - id : int
+        - velocidadeAtual : int
+        + acelerar(valor : int) int
+        + frear(valor : int) int
     }
 
     class Anfibio{
         <<abstract>>
-        -CAP_MAX_LASTRO : int
-        -capAtualLastro : int
-        +recolherRodas() boolean
-        +esvaziarLastro() boolean
+        - CAP_MAX_LASTRO : int
+        - capAtualLastro : int
+        + recolherRodas() boolean
+        + esvaziarLastro() boolean
     }
     class Conversivel{
         <<interface>>
-        +abrirCapota() boolean
+        + abrirCapota() boolean
     }
     class OffRoad{
         <<interface>>
-        +ativarTracao() boolean
+        + ativarTracao() boolean
     }
     
     class FerrariPortoFino{
-        +ligarControleEstabilidade() boolean
+        + ligarControleEstabilidade() boolean
     }
     class ChevyS10{
-        +abrirCapota() boolean
+        + abrirCapota() boolean
     }
     class WaterCarPanther{
-        -TEMP_MIN_MINIGELADEIRA : int
-        -TEMP_MAX_MINIGELADEIRA : int
-        -tempAtualMiniGel : int
-        +regTempMiniGeladeira(valor : int) int
+        - TEMP_MIN_MINIGELADEIRA : int
+        - TEMP_MAX_MINIGELADEIRA : int
+        - tempAtualMiniGel : int
+        + regTempMiniGeladeira(valor : int) int
     }
     
     Veiculo <|-- Anfibio
