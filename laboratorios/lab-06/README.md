@@ -5,7 +5,7 @@ classDiagram
         <<abstract>>
         -VELOCIDADE_MAX : int
         -id : int
-        #velocidadeAtual : int
+        -velocidadeAtual : int
         +acelerar(valor : int) int
         +frear(valor : int) int
     }
@@ -13,7 +13,7 @@ classDiagram
     class Anfibio{
         <<abstract>>
         -CAP_MAX_LASTRO : int
-        #capAtualLastro : int
+        -capAtualLastro : int
         +recolherRodas() boolean
         +esvaziarLastro() boolean
     }
@@ -33,9 +33,9 @@ classDiagram
         +abrirCapota() boolean
     }
     class WaterCarPanther{
-        #TEMP_MIN_MINIGELADEIRA : int
-        #TEMP_MAX_MINIGELADEIRA : int
-        #tempAtualMiniGel : int
+        -TEMP_MIN_MINIGELADEIRA : int
+        -TEMP_MAX_MINIGELADEIRA : int
+        -tempAtualMiniGel : int
         +regTempMiniGeladeira(valor : int) int
     }
     
