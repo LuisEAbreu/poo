@@ -10,6 +10,7 @@ Repositório com as atividades práticas da disciplina de Programação Orientad
 - [Laboratório 02](laboratorios/lab-02) - Prática com a linguagem Java
 - [Laboratório 03](laboratorios/lab-03) - Prática com construtor, modificadores, sobrecarga, membros estáticos e finais
 - [Laboratório 04](laboratorios/lab-04) - Prática coleções Java.
+- [Laboratório 06](laboratorios/lab-06) - Herança e polimorfismo   
 
 ## Aulas
 
@@ -28,3 +29,6 @@ Repositório com as atividades práticas da disciplina de Programação Orientad
 - [Aula 13 - 01/10/2026](aulas/2026-10-01) - Uso dos conceitos de Associação do tipo Composição e diagrama UML.
 - [Aula 14 - 05/10/2026](aulas/2026-10-05) - Utilização geral de conceitos: Coleções, UML e associação entre classes.
 - [Aula 15 - 15/10/2026](aulas/2026-10-15) - Introdução ao conceito de herança.
+- [Aula 16 - 22/10/2026](aulas/2026-10-22) - Uso dos conceitos de herança.
+- [Aula 17 - 26/10/2026](aulas/2026-10-26) - Continuação ao uso de herança.
+- [Aula 18 - 29/10/2026](aulas/2026-10-29) - Introdução ao conceito de Classe abstrata, interface e polimorfismo.
