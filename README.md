@@ -10,6 +10,7 @@ Repositório com as atividades práticas da disciplina de Programação Orientad
 - [Laboratório 02](laboratorios/lab-02) - Prática com a linguagem Java
 - [Laboratório 03](laboratorios/lab-03) - Prática com construtor, modificadores, sobrecarga, membros estáticos e finais
 - [Laboratório 04](laboratorios/lab-04) - Prática coleções Java.
+- [Laboratório 05](laboratorios/lab-05) - Associação entre classes e diagrama de classes UML.
 - [Laboratório 06](laboratorios/lab-06) - Herança e polimorfismo   
 
 ## Aulas
