@@ -18,9 +18,22 @@
     classDiagram
         
         class App{
+            -OPCAO_SAIDA : int
             -agenda : Agenda
-            +main()
-            +menu()
+            +main() void
+            -menu() int
+            -adicionarContato() void
+            -encontrarContato() void
+            -removerContato() void
+            -adicionarTelefone() void
+            -adicionarEmail() void
+            -atualizarTelefone() void
+            -atualizarEmail() void
+            -removerTelefone() void
+            -removerEmail() void
+            -listarDadosDoContato() void
+            -listarTodosContatos() void
+            -stringDataParaLocalDate() LocalDate
         }
         
         class Agenda{ 
