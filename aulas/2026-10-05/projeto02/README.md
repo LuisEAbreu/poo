@@ -27,8 +27,8 @@
             -contatos : ArrayList~Contato~
             
             +Agenda()
-            +addContato(c: Contato) boolean
-            +findContato(nome: String, sobreNome: String) ArrayList<Contato>
+            +addContato(contato: Contato) boolean
+            +findContato(nome: String, sobrenome: String) ArrayList<Contato>
             +removeContato(indiceContatoNaLista : int) boolean
             +addTelefone(rotulo: String, valor: String, indiceContatoNaLista : int) boolean
             +addEmail(rotulo: String, valor: String, indiceContatoNaLista : int) boolean
@@ -36,6 +36,7 @@
             +updateEmail(rotulo: String, valor: String, indiceContatoNaLista : int) boolean
             +removeTelefone(rotulo: String, indiceContatoNaLista : int) boolean
             +removeEmail(rotulo: String, indiceContatoNaLista : int) boolean
+            +listarDadosDoContato(indiceContatoNaLista: int ) String
             +toString() String
         }
         
