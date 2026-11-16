@@ -32,5 +32,17 @@ public class App {
         });
 
         IO.println(Planeta.getPorPosicao(3));
+
+        ArrayList<Carta> baralho = new ArrayList<>();
+
+        for (int i = 0; i < Naipe.values().length * Valor.values().length; i++) {
+            for(Naipe n : Naipe.values()){
+                for(Valor v : Valor.values()){
+                    baralho.add(new Carta(v, n));
+                }
+            }
+        }
+
+        baralho.forEach(IO::println);
     }
 }
