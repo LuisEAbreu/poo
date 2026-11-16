@@ -30,5 +30,7 @@ public class App {
                 }
             }
         });
+
+        IO.println(Planeta.getPorPosicao(3));
     }
 }
