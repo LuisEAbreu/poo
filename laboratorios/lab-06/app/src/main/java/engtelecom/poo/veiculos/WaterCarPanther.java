@@ -3,6 +3,7 @@ package engtelecom.poo.veiculos;
 public class WaterCarPanther extends Anfibio implements Conversivel, OffRoad {
     private static final int TEMP_MIN_MINIGELADEIRA = 0;
     private static final int TEMP_MAX_MINIGELADEIRA = 10;
+    private int tempAtualMiniGel = 5;
     private boolean capotaAberta;
     private boolean tracaoIntegral;
 
