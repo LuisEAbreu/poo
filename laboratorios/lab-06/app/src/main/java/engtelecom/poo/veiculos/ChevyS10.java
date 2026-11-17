@@ -4,6 +4,12 @@ public class ChevyS10 extends Veiculo implements OffRoad {
     private boolean tracaoIntegral;
     private boolean cacambaAberta;
 
+    public ChevyS10() {
+        super();
+        this.tracaoIntegral = false;
+        this.cacambaAberta = false;
+    }
+
     public boolean abrirCacamba() {
         if(velocidadeAtual == 0){
             cacambaAberta = true;
