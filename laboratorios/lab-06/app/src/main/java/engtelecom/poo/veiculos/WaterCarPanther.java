@@ -52,4 +52,13 @@ public class WaterCarPanther extends Anfibio implements Conversivel, OffRoad {
         }
         return false;
     }
+
+    public boolean regTempMiniGeladeira(int valor) {
+        if (valor >= TEMP_MIN_MINIGELADEIRA && valor <= TEMP_MAX_MINIGELADEIRA) {
+            tempAtualMiniGel = valor;
+
+            return true;
+        }
+        return false;
+    }
 }
