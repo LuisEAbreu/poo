@@ -11,4 +11,8 @@ public abstract class Anfibio extends Veiculo{
         this.capacidadeLastro = Math.min(capacidadeLastro, LIMITE_MAX_LASTRO);
         this.rodasRecolhidas = false;
     }
+
+    public void esvaziarLastro() {
+        nivelAtualLastro = 0;
+    }
 }
