@@ -12,6 +12,15 @@ public abstract class Anfibio extends Veiculo{
         this.rodasRecolhidas = false;
     }
 
+    public boolean encherLastro() {
+        if (rodasRecolhidas) {
+            return false;
+        }
+        nivelAtualLastro = capacidadeLastro;
+
+        return true;
+    }
+
     public void esvaziarLastro() {
         nivelAtualLastro = 0;
     }
