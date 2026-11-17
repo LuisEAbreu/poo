@@ -39,4 +39,14 @@ public class WaterCarPanther extends Anfibio implements Conversivel, OffRoad {
         }
         return false;
     }
+
+    @Override
+    public boolean desativarTracao() {
+        if (velocidadeAtual == 0 && !rodasRecolhidas) {
+            tracaoIntegral = false;
+
+            return true;
+        }
+        return false;
+    }
 }
