@@ -22,6 +22,15 @@ public abstract class Anfibio extends Veiculo{
         return false;
     }
 
+    public boolean estenderRodas() {
+        if (velocidadeAtual == 0) {
+            rodasRecolhidas = false;
+
+            return true;
+        }
+        return false;
+    }
+
     public boolean encherLastro() {
         if (rodasRecolhidas) {
             return false;
