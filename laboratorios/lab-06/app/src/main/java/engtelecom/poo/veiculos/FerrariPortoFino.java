@@ -10,6 +10,14 @@ public class FerrariPortoFino extends Veiculo implements Conversivel {
         this.capotaAberta = false;
     }
 
+    public void ligarControleEstabilidade(){
+        controleEstabilidade = true;
+    }
+
+    public void desligarControleEstabilidade(){
+        controleEstabilidade = false;
+    }
+
     @Override
     public boolean abrirCapota() {
         if(velocidadeAtual == 0){
