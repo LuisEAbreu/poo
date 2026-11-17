@@ -25,4 +25,10 @@ public abstract class Veiculo {
             velocidadeAtual = Math.min((valor + velocidadeAtual), VELOCIDADE_MAX);
         }
     }
+
+    public void frear(int valor) {
+        if (valor > 0) {
+            velocidadeAtual = Math.max((velocidadeAtual - valor), 0);
+        }
+    }
 }
