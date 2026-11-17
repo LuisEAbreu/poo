@@ -15,4 +15,8 @@ public abstract class Veiculo {
     public int getId() {
         return id;
     }
+
+    public int getVelocidadeAtual() {
+        return velocidadeAtual;
+    }
 }
