@@ -1,6 +1,6 @@
 package engtelecom.poo.veiculos;
 
-public class WaterCarPanther extends Anfibio{
+public class WaterCarPanther extends Anfibio implements Conversivel, OffRoad {
     private boolean capotaAberta;
     private boolean tracaoIntegral;
 
