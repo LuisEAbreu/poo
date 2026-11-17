@@ -19,4 +19,10 @@ public abstract class Veiculo {
     public int getVelocidadeAtual() {
         return velocidadeAtual;
     }
+
+    public void acelerar(int valor) {
+        if (valor > 0) {
+            velocidadeAtual = Math.min((valor + velocidadeAtual), VELOCIDADE_MAX);
+        }
+    }
 }
