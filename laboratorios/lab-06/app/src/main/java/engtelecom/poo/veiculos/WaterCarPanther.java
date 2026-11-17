@@ -9,4 +9,14 @@ public class WaterCarPanther extends Anfibio implements Conversivel, OffRoad {
         this.capotaAberta = false;
         this.tracaoIntegral = false;
     }
+
+    @Override
+    public boolean abrirCapota() {
+        if (velocidadeAtual == 0) {
+            capotaAberta = true;
+
+            return true;
+        }
+        return false;
+    }
 }
