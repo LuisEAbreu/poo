@@ -11,4 +11,8 @@ public abstract class Veiculo {
         this.id = ++contador;
         this.velocidadeAtual = 0;
     }
+
+    public int getId() {
+        return id;
+    }
 }
