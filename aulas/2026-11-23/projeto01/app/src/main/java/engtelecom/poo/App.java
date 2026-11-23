@@ -1,8 +1,20 @@
 package engtelecom.poo;
 
-import java.util.InputMismatchException;
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class App {
+    public static void lerArquivo(String nomeArquivo) {
+        try(Scanner leitor = new Scanner(new File(nomeArquivo))) {
+            while (leitor.hasNext()) {
+                IO.println(leitor.nextLine());
+            }
+        } catch (IOException e) {
+            System.err.println("Erro ao ler o arquivo");
+        }
+    }
+
     public static void main(String[] args) {
         int a, b;
 
@@ -21,5 +33,8 @@ public class App {
             System.err.println("Comportamento inesperado");
         }
         IO.println("Fim do programa");
+
+        lerArquivo(".gitignore");
+        lerArquivo(".ab");
     }
 }
