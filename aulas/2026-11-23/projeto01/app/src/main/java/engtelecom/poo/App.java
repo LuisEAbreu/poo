@@ -15,7 +15,7 @@ public class App {
         }
     }
 
-    public static void main(String[] args) {
+    public static void calculadora(){
         int a, b;
 
         try{
@@ -33,6 +33,10 @@ public class App {
             System.err.println("Comportamento inesperado");
         }
         IO.println("Fim do programa");
+    }
+
+    public static void main(String[] args) {
+        calculadora();
 
         lerArquivo(".gitignore");
         lerArquivo(".ab");
