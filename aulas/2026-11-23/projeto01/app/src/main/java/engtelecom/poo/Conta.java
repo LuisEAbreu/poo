@@ -6,4 +6,11 @@ public class Conta {
     public Conta(double saldo) {
         this.saldo = saldo;
     }
+
+    public void saque(double valor) throws SaldoInsuficienteException {
+        if(this.saldo < valor){
+            throw new SaldoInsuficienteException("Saldo insuficiente");
+        }
+        this.saldo -= valor;
+    }
 }
