@@ -40,5 +40,13 @@ public class App {
 
         lerArquivo(".gitignore");
         lerArquivo(".ab");
+
+        Conta c = new Conta(200);
+
+        try {
+            c.saque(300);
+        } catch (SaldoInsuficienteException e) {
+            System.err.println("Erro: " + e.getMessage());
+        }
     }
 }
