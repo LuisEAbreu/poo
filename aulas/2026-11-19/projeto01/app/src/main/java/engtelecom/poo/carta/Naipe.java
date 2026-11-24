@@ -1,15 +1,19 @@
 package engtelecom.poo.carta;
 
 public enum Naipe {
-    PAUS("\u2663"),
-    OUROS("\u2666"),
-    COPAS("\u2665"),
-    ESPADAS("\u2660");
+    PAUS(1,"\u2663", "p"),
+    OUROS(2,"\u2666", "o"),
+    COPAS(3,"\u2665", "c"),
+    ESPADAS(4,"\u2660", "e");
 
+    public final int valor;
     public final String simbolo;
+    public final String sigla;
 
-    Naipe(String simbolo) {
+    Naipe(int valor, String simbolo, String sigla) {
+        this.valor = valor;
         this.simbolo = simbolo;
+        this.sigla = sigla;
     }
 
     @Override
