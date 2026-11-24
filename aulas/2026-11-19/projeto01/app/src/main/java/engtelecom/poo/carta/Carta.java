@@ -8,4 +8,9 @@ public class Carta {
         this.valor = valor;
         this.naipe = naipe;
     }
+
+    @Override
+    public String toString() {
+        return valor + " " + naipe;
+    }
 }
