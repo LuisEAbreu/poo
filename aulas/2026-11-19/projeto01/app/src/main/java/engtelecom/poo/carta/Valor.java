@@ -20,4 +20,9 @@ public enum Valor {
     Valor(int numero) {
         this.numero = numero;
     }
+
+    @Override
+    public String toString() {
+        return "" + numero;
+    }
 }
