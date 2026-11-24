@@ -4,10 +4,18 @@ import engtelecom.poo.carta.Carta;
 import engtelecom.poo.carta.Naipe;
 import engtelecom.poo.carta.Valor;
 
+import java.util.ArrayList;
+
 public class App {
     public static void main(String[] args) {
-        Carta c = new Carta(Valor.AS, Naipe.ESPADAS);
+        ArrayList<Carta> baralho = new ArrayList<>();
 
-        IO.println(c);
+        for(Naipe n : Naipe.values()){
+            for(Valor v : Valor.values()){
+                baralho.add(new Carta(v, n));
+            }
+        }
+
+        baralho.forEach(IO::println);
     }
 }
