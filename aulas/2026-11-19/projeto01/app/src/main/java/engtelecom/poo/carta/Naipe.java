@@ -11,4 +11,9 @@ public enum Naipe {
     Naipe(String simbolo) {
         this.simbolo = simbolo;
     }
+
+    @Override
+    public String toString() {
+        return simbolo;
+    }
 }
