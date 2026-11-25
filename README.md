@@ -33,3 +33,6 @@ Repositório com as atividades práticas da disciplina de Programação Orientad
 - [Aula 16 - 22/10/2026](aulas/2026-10-22) - Uso dos conceitos de herança.
 - [Aula 17 - 26/10/2026](aulas/2026-10-26) - Continuação ao uso de herança.
 - [Aula 18 - 29/10/2026](aulas/2026-10-29) - Introdução ao conceito de Classe abstrata, interface e polimorfismo.
+- [Aula 19 - 16/11/2026](aulas/2026-11-16) - Introdução ao conceito de enumerações e tipos genéricos.
+- [Aula 20 - 19/11/2026](aulas/2026-11-19) - Uso de enums e GUI (Graphical User Interface) com biblioteca externa Draw.
+- [Aula 21 - 23/11/2026](aulas/2026-11-23) - Introdução ao conceito e uso de tratamento de exceções e exceções personalizadas. 
