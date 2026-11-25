@@ -19,6 +19,7 @@ public class App implements DrawListener {
         draw.setCanvasSize(largura, altura);
         draw.setXscale(0, largura);
         draw.setYscale(0, altura);
+        draw.enableDoubleBuffering();
         draw.addListener(this);
 
         int x = 50;
@@ -52,5 +53,6 @@ public class App implements DrawListener {
                 c.desenhar(draw);
             }
         });
+        draw.show();
     }
 }
