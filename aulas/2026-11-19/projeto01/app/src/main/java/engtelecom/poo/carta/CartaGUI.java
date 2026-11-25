@@ -19,4 +19,12 @@ public class CartaGUI extends Carta{
 
         d.picture(x, y, "cartas/" + desenho + ".png");
     }
+
+    public boolean virarCarta(double x, double y){
+        if((x >= this.x - 36 && x <= this.x + 36) && (y >= this.y - 48 && y <= this.y + 48)){
+            frente = !frente;
+            return true;
+        }
+        return false;
+    }
 }
