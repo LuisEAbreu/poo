@@ -9,14 +9,21 @@ import engtelecom.poo.carta.Valor;
 import java.util.ArrayList;
 
 public class App {
-    public static void main(String[] args) {
-        ArrayList<CartaGUI> baralho = new ArrayList<>();
+    private Draw draw;
+
+    ArrayList<CartaGUI> baralho = new ArrayList<>();
+
+    public App(int altura, int largura){
+        draw = new Draw();
+        draw.setCanvasSize(largura, altura);
+        draw.setXscale(0, largura);
+        draw.setYscale(0, altura);
 
         int x = 50;
         int y = 780;
         for (Naipe n : Naipe.values()) {
             for (Valor v : Valor.values()) {
-                baralho.add(new CartaGUI(v, n, x, y));
+                baralho.add(new CartaGUI(v, n, x, y, false));
                 x += 100;
                 if(x == 950){
                     x = 50;
@@ -24,15 +31,15 @@ public class App {
                 }
             }
         }
+    }
 
-        int largura = 1000;
-        int altura = 1000;
-
-        Draw draw = new Draw();
-        draw.setCanvasSize(largura, altura);
-        draw.setXscale(0, largura);
-        draw.setYscale(0, altura);
-
+    public void desenhar() {
         baralho.forEach(e->e.desenhar(draw));
+        draw.show();
+    }
+
+    static void main(String[] args) {
+        App app = new App(1000, 1000);
+        app.desenhar();
     }
 }
