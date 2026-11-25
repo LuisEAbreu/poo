@@ -10,24 +10,29 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) {
-        ArrayList<Carta> baralho = new ArrayList<>();
+        ArrayList<CartaGUI> baralho = new ArrayList<>();
 
-        for(Naipe n : Naipe.values()){
-            for(Valor v : Valor.values()){
-                baralho.add(new Carta(v, n));
+        int x = 50;
+        int y = 780;
+        for (Naipe n : Naipe.values()) {
+            for (Valor v : Valor.values()) {
+                baralho.add(new CartaGUI(v, n, x, y));
+                x += 100;
+                if(x == 950){
+                    x = 50;
+                    y -= 100;
+                }
             }
         }
 
-        int largura = 500;
-        int altura = 500;
+        int largura = 1000;
+        int altura = 1000;
 
         Draw draw = new Draw();
         draw.setCanvasSize(largura, altura);
         draw.setXscale(0, largura);
         draw.setYscale(0, altura);
 
-        CartaGUI c = new CartaGUI(Valor.AS, Naipe.ESPADAS, largura/2, altura/2);
-
-        c.desenhar(draw);
+        baralho.forEach(e->e.desenhar(draw));
     }
 }
