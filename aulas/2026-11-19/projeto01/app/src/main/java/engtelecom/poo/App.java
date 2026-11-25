@@ -44,4 +44,13 @@ public class App implements DrawListener {
         App app = new App(1000, 1000);
         app.desenhar();
     }
+
+    @Override
+    public void mousePressed(double x, double y) {
+        baralho.forEach(c -> {
+            if(c.virarCarta(x, y)){
+                c.desenhar(draw);
+            }
+        });
+    }
 }
