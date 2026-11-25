@@ -15,8 +15,8 @@ public class CartaGUI extends Carta{
     }
 
     public void desenhar(Draw d){
-        String desenho = valor.sigla + naipe.sigla;
+        String desenho = (frente) ? valor.sigla + naipe.sigla : "fundoa";
 
-        d.picture(x, y, "cartas/"+ desenho + ".png");
+        d.picture(x, y, "cartas/" + desenho + ".png");
     }
 }
