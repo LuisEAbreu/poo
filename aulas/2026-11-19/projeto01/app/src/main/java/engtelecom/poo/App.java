@@ -1,6 +1,7 @@
 package engtelecom.poo;
 
 import edu.princeton.cs.algs4.Draw;
+import edu.princeton.cs.algs4.DrawListener;
 import engtelecom.poo.carta.Carta;
 import engtelecom.poo.carta.CartaGUI;
 import engtelecom.poo.carta.Naipe;
@@ -8,7 +9,7 @@ import engtelecom.poo.carta.Valor;
 
 import java.util.ArrayList;
 
-public class App {
+public class App implements DrawListener {
     private Draw draw;
 
     ArrayList<CartaGUI> baralho = new ArrayList<>();
@@ -18,6 +19,7 @@ public class App {
         draw.setCanvasSize(largura, altura);
         draw.setXscale(0, largura);
         draw.setYscale(0, altura);
+        draw.addListener(this);
 
         int x = 50;
         int y = 780;
