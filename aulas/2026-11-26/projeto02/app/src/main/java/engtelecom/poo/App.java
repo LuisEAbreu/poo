@@ -1,11 +1,19 @@
 package engtelecom.poo;
 
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
+import static java.nio.file.StandardOpenOption.APPEND;
+import static java.nio.file.StandardOpenOption.CREATE;
+
 public class App {
-    private static final int OPCAO_SAIDA = 12;
+    private static final int OPCAO_SAIDA = 14;
 
     Agenda agenda = new Agenda();
 
@@ -29,6 +37,8 @@ public class App {
                 case 9 -> a.removerEmail();
                 case 10 -> a.listarDadosDoContato();
                 case 11 -> a.listarTodosContatos();
+                case 12 -> a.salvarContatos();
+                case 13 -> a.carregarContatos();
                 case OPCAO_SAIDA -> IO.println("Saindo...");
             }
         } while (opcao != OPCAO_SAIDA);
@@ -50,10 +60,40 @@ public class App {
                         9 - Remover e-mail
                         10 - Listar dados de um contato.
                         11 - Listar todos os contatos.
+                        12 - Salvar contatos
+                        13 - Carregar contatos
                         %d - Sair do sistema.
                         """, OPCAO_SAIDA));
 
         return Integer.parseInt(IO.readln("Entre com a opção: "));
+    }
+
+    private void carregarContatos() {
+        String currentDir = System.getProperty("user.dir");
+        Path caminho = Path.of(currentDir + "/arquivo.dat");
+
+        try(ObjectInputStream in = new ObjectInputStream(Files.newInputStream(caminho))){
+            ArrayList<Contato> c = (ArrayList<Contato>) in.readObject();
+
+            agenda.setContatos(c);
+
+            IO.println("Contatos carregados com sucesso.");
+        } catch (Exception e){
+            System.err.println("Erro: " + e);
+        }
+    }
+
+    private void salvarContatos() {
+        String currentDir = System.getProperty("user.dir");
+        Path caminho = Path.of(currentDir + "/arquivo.dat");
+
+        try (ObjectOutputStream out = new ObjectOutputStream(Files.newOutputStream(caminho, CREATE, APPEND))) {
+            out.writeObject(agenda.getContatos());
+
+            IO.println("Contatos salvos com sucesso.");
+        } catch (IOException e) {
+            throw new RuntimeException("Erro: " + e);
+        }
     }
 
     private void adicionarContato() {

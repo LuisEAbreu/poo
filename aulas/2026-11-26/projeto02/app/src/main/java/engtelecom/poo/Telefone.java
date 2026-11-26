@@ -1,9 +1,10 @@
 package engtelecom.poo;
 
 import javax.swing.text.MaskFormatter;
+import java.io.Serializable;
 import java.text.ParseException;
 
-public class Telefone {
+public class Telefone implements Serializable {
     private String valor;
 
     public Telefone(String valor) {

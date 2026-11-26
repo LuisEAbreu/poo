@@ -5,6 +5,14 @@ import java.util.ArrayList;
 public class Agenda {
     private ArrayList<Contato> contatos = new ArrayList<>();
 
+    public ArrayList<Contato> getContatos() {
+        return contatos;
+    }
+
+    public void setContatos(ArrayList<Contato> contatos) {
+        this.contatos = contatos;
+    }
+
     public boolean addContato(Contato contato) {
         contatos.add(contato);
 

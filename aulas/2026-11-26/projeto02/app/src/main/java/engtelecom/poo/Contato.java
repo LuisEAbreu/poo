@@ -1,10 +1,11 @@
 package engtelecom.poo;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 
-public class Contato {
+public class Contato implements Serializable {
     private String nome;
     private String sobrenome;
     private LocalDate dataNasc;
