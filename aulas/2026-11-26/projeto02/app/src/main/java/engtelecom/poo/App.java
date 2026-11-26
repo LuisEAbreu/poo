@@ -91,8 +91,8 @@ public class App {
             out.writeObject(agenda.getContatos());
 
             IO.println("Contatos salvos com sucesso.");
-        } catch (IOException e) {
-            throw new RuntimeException("Erro: " + e);
+        } catch (Exception e){
+            System.err.println("Erro: " + e);
         }
     }
 
